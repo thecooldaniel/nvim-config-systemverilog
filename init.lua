@@ -20,6 +20,8 @@
 -- If a different plugin manager is desired,
 -- you may need to tweak how some plugins are installed
 -- and their configurations defined
+
+-- Setup lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({
@@ -32,10 +34,14 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
--- local plugins = {
--- 	{'neovim/nvim-lspconfig'},
--- }
-require("lazy").setup()
+
+-- Specify and configure plugins
+local plugins = {
+	{'neovim/nvim-lspconfig'},
+}
+
+-- Setup lazy.nvim
+require("lazy").setup(plugins)
 
 
 
