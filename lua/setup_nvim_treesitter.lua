@@ -28,7 +28,7 @@ return {
 			-- Include languages here
 			-- 'systemverilog' is sourced from
 			-- lua\systemverilog.lua
-			require'setup-systemverilog'.setupTreesitter(opts)
+			require'setup_systemverilog'.setupTreesitter(opts)
 
 			-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 

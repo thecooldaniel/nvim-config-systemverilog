@@ -1,4 +1,3 @@
-
 return {
 	'neovim/nvim-lspconfig',
 	config = function()
@@ -62,7 +61,7 @@ return {
 		-- Include languages here
 		-- 'systemverilog' is sourced from
 		-- lua\systemverilog.lua
-		require'setup-systemverilog'.setupLsp()
+		require'setup_systemverilog'.setupLsp()
 
 	end,
 }

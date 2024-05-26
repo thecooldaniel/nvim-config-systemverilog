@@ -23,7 +23,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
--- Use lazy.nvim for to manage plugins
+-- Use lazy.nvim to manage plugins
 -- https://github.com/folke/lazy.nvim
 
 -- If a different plugin manager is desired,
@@ -46,10 +46,14 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Specify and configure plugins
 local plugins = {
-	-- lua\nvim-lspconfig.lua
-	require'nvim-lspconfig',
-	-- lua\nvim-treesitter.lua
-	require'nvim-treesitter',
+	-- lua\setup_nvim_lspconfig.lua
+	require'setup_nvim_lspconfig',
+
+	-- lua\setup_nvim_treesitter.lua
+	require'setup_nvim_treesitter',
+
+	-- lua\setup_nvim_lint.lua
+	require'setup_nvim_lint',
 }
 
 -- Setup lazy.nvim
