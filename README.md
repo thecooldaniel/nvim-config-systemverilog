@@ -13,7 +13,7 @@ To provide a minimum viable config as a point of reference for configuring an LS
 
 `init.lua` - The entry point for all Neovim configuration
 
-`lazy-lock.json` - I included this to lock the various plugins at known-good versions that work together.
+`lazy-lock.json` - Locks the various plugins at known-good versions that work together.
 
 ## Included Plugins
 `lazy.nvim` - Plugin installation, configuration, and management
