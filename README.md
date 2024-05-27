@@ -34,6 +34,7 @@ This configuration targets `verilator` for linting, and `verible-verilog-ls` as 
 4. Run `:Lazy` to verify. Press `q` to close the window.
 5. **IMPORTANT:** Set the CWD of the editor/tab to the root of a SystemVerilog project. The root is defined as the directory from which `verilator` should be run
 6. Open `example\sim\tb_counter.sv`, `example\rtl\counter.sv`, or `example\rtl\include\packageExample.svh`. Each of these files should contain warnings and/or errors.
+
 ![Image showing errors on the files mentioned in step 6](screenshot.png)
 
 ## Notes
